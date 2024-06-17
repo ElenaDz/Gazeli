@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        class ParamsCar {
+
+            EVEN_CHANGE_PARAMS // событие Изменение параметра
+            constructor() {
+                // создаем  EVEN_CHANGE_PARAMS
+            }
+
+            getPassengers()
+            {
+                return // количество выбранных пассажиров
+            }
+
+            getLoaders()
+            {
+                return // количество выбранных грузчиков
+            }
+
+            getDimensions()
+            {
+                return //выбранные габариты 1 и габариты 2
+            }
+
+            getСarcase()
+            {
+                return // выбранный вид кузова
+            }
+        }
+        class ListCara
+        {
+
+            constructor() {
+                this.builder()// при загрузки спраницы, подгружаем все машины
+                // при  EVEN_CHANGE_PARAMS вызываем метод builder
+            }
+
+
+            builder()
+            {
+                // Получаем список машин c помощью парметров из методов в классе ParamsCar
+                // меняем html
+                // инициализируем класс Counter и записываем поличество машин
+            }
+        }
+
+        class Car
+        {
+            constructor() {
+            }
+            get passengers()
+            {
+                return // количество пассажиров
+            }
+
+            get carcase()
+            {
+                return // вид кузова
+            }
+
+            get height()
+            {
+                return // габариты высоты ( габариты №1)
+            }
+
+            get length()
+            {
+                return // габариты длины ( габариты №2)
+            }
+
+            static create()
+            {
+                return // [] обьектов Car
+            }
+        }
+        class Counter
+        {
+            constructor()
+            {
+                // меняет счётчик машин, при нажатии вправо +1, при нажатии  в лево -1
+            }
+
+            get currentNumberCar()
+            {
+                return // номер текущей машины
+            }
+
+            set currentNumberCar(current_number)
+            {
+                // записываем номер текущей машины
+            }
+            get count_car()
+            {
+                return // количетсво машин
+            }
+
+            set count_car(count)
+            {
+                // записываем количество машин для выбранных параметров в html раздела: Вам подходит
+            }
+        }
+
+
+    </script>
+</body>
+</html>
