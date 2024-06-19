@@ -17,21 +17,32 @@
             integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        class ParamsCar {
 
-            EVEN_CHANGE_PARAMS // событие Изменение параметра
+		class ParamsCar {
+
+			/**
+             * Событие изменение параметра
+			 */
+			static EVEN_CHANGE_PARAMS;
+
             constructor() {
                 // создаем  EVEN_CHANGE_PARAMS
             }
 
-            getPassengers()
+			/**
+             * @return количество выбранных пассажиров
+			 */
+			getPassengers()
             {
-                return // количество выбранных пассажиров
             }
 
-            getLoaders()
+			/**
+             * Возвращает количество выбранных грузчиков
+			 * @return {int}
+			 */
+			getLoaders()
             {
-                return // количество выбранных грузчиков
+                return 0;
             }
 
             getDimensions()
@@ -44,7 +55,8 @@
                 return // выбранный вид кузова
             }
         }
-        class ListCara
+
+        class ListCars
         {
 
             constructor() {
@@ -59,12 +71,41 @@
                 // меняем html
                 // инициализируем класс Counter и записываем поличество машин
             }
+
+            /**
+             * @param {ParamsCar} params_car
+             */
+            filter(params_car)
+            {
+
+            	// фильтрация
+
+                this.counter.reset();
+                this.counter.update();
+            }
+
+			/**
+             * @return Car[]
+			 */
+			getCars()
+			{
+
+			}
+
+			/**
+			 * @return {Counter}
+			 */
+			get counter()
+            {
+            	return new Counter();
+            }
         }
 
         class Car
         {
             constructor() {
             }
+
             get passengers()
             {
                 return // количество пассажиров
@@ -85,16 +126,38 @@
                 return // габариты длины ( габариты №2)
             }
 
+            hide()
+            {
+
+            }
+
+            show()
+            {
+
+            }
+
             static create()
             {
                 return // [] обьектов Car
             }
         }
+
         class Counter
         {
             constructor()
             {
                 // меняет счётчик машин, при нажатии вправо +1, при нажатии  в лево -1
+            }
+
+
+            reset()
+            {
+
+            }
+
+            update()
+            {
+
             }
 
             get currentNumberCar()
@@ -106,6 +169,7 @@
             {
                 // записываем номер текущей машины
             }
+
             get count_car()
             {
                 return // количетсво машин
